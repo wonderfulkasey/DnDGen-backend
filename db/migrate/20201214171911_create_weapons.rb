@@ -5,7 +5,7 @@ class CreateWeapons < ActiveRecord::Migration[6.0]
       t.string :weapon_category
       t.string :weapon_range
       t.string :url
-      t.integer :equipment_id
+      t.references :equipment, foreign_key: true
 
       t.timestamps
     end

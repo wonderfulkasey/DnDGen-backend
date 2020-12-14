@@ -26,6 +26,8 @@ ActiveRecord::Schema.define(version: 2020_12_14_171911) do
     t.integer "equipment_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["equipment_id"], name: "index_weapons_on_equipment_id"
   end
 
+  add_foreign_key "weapons", "equipment"
 end
