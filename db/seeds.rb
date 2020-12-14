@@ -5,11 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Equipment.destroy_all
+Weapon.destroy_all
+
 spooky = Equipment.create(name: "Spooky")
 scratchy = Equipment.create(name: "Scratchy")
 splendid = Equipment.create(name: "splendid")
 
-Weapon.create(name: "cool weapon", weapon_category: "best", weapon_range: "really far", url: "google.com")
-
-Equipment.destroy_all
-Weapon.destroy_all
+Weapon.create(name: "cool weapon", weapon_category: "best", weapon_range: "really far", url: "google.com", equipment_id:1)
