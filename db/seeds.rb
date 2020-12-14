@@ -9,4 +9,7 @@ spooky = Equipment.create(name: "Spooky")
 scratchy = Equipment.create(name: "Scratchy")
 splendid = Equipment.create(name: "splendid")
 
-Weapon.create(name: "cool weapon", weapon_category: "best", weapon_range: "really far", url: "google.com", foreign_id: )
+Weapon.create(name: "cool weapon", weapon_category: "best", weapon_range: "really far", url: "google.com")
+
+Equipment.destroy_all
+Weapon.destroy_all
