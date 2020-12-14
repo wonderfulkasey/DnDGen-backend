@@ -3,7 +3,10 @@ class WeaponsController < ApplicationController
     def index 
         weapons = Weapon.all 
         
-        #render json: @weapons
+        options = {
+            include: [:equipment]
+        }
+        
         render json: WeaponSerializer.new(weapons)
     end 
 
