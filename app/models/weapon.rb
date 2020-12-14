@@ -1,3 +1,3 @@
 class Weapon < ApplicationRecord
-    #belongs_to :equipment
+    belongs_to :equipment
 end
