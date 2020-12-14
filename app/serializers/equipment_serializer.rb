@@ -1,4 +1,4 @@
 class EquipmentSerializer
   include FastJsonapi::ObjectSerializer
-  attributes 
+  attributes :name
 end

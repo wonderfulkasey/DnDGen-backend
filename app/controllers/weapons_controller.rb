@@ -7,7 +7,7 @@ class WeaponsController < ApplicationController
             include: [:equipment]
         }
         
-        render json: WeaponSerializer.new(weapons)
+        render json: WeaponSerializer.new(weapons, options)
     end 
 
     def create
