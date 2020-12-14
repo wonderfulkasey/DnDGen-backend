@@ -6,14 +6,6 @@ class WeaponsController < ApplicationController
         render json: @weapons
     end 
 
-    def create
-        @weapon.new(weapon_params)
-        if @weapon.save
-            render json: @weapon, status: :accepted
-        else  
-            render json: { errors: @weapon.errors.full_messages }, status: :unprocessible_entity
-        end 
-    end
 
 private 
 
