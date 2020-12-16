@@ -11,7 +11,7 @@ class WeaponsController < ApplicationController
     end 
 
     def create
-        weapon.new(weapon_params)
+        weapon = Weapon.new(weapon_params)
         if weapon.save
           render json: weapon, status: :accepted
         else
