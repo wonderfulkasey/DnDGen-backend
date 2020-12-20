@@ -29,6 +29,8 @@ gem 'fast_jsonapi'
 
 gem 'bootstrap', '~> 4.3.1'
 
+gem 'devise'
+
 gem 'jwt'
 
 group :development, :test do
