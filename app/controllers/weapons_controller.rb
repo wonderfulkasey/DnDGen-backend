@@ -13,7 +13,7 @@ class WeaponsController < ApplicationController
     def create
         weapon = Weapon.new(weapon_params)
         if weapon.save
-          render json: weapon, status: :accepted
+          render json: WeaponSerializer.new(weapon), status: :accepted
         else
           render json: { errors: weapon.errors.full_messages }, status: :unprocessible_entity
         end
@@ -22,6 +22,6 @@ class WeaponsController < ApplicationController
 private 
 
     def weapon_params
-        params.permit(:name, :weapon_category, :weapon_range, :url, :equipment_id)
+        params.permit(:name, :equipment_id)
     end 
 end
