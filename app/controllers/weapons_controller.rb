@@ -2,7 +2,13 @@ class WeaponsController < ApplicationController
 
     def index 
         weapons = Weapon.all 
+
+        options = {
+            #includes equipment
+            include: [:equipment]
+        }
         
+        #pass options object to serializer
         render json: WeaponSerializer.new(weapons)
     end 
 
