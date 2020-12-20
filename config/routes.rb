@@ -3,9 +3,6 @@ Rails.application.routes.draw do
 
   resources :weapons, only: [:index, :create]
   resources :equipments, only: [:index]
-  resources :users, only: [:index, :create]
-
-  post '/login', to: 'auth#create'
  
 
 end
