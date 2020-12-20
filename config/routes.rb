@@ -3,6 +3,6 @@ Rails.application.routes.draw do
 
   resources :weapons, only: [:index, :create]
   resources :equipments, only: [:index]
+  
  
-
 end
