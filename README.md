@@ -1,5 +1,7 @@
 # README
 
+FRONT END OF PROJECT: https://github.com/wonderfulkasey/DnDGen-frontend
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
