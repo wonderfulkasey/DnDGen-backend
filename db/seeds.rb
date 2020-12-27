@@ -17,7 +17,7 @@ splendid = Equipment.create(name: "splendid")
 Weapon.create(name: "cool weapon", weapon_category: "best", weapon_range: "really far", url: "google.com", equipment_id: "1")
 
 5.times do
-    Idea.create(
+    Idea.create([{
         name: Faker::Game.title
-    )
+    }])
 end
