@@ -1,27 +1,20 @@
-# README
+# DNDGen - README
 
 FRONT END OF PROJECT: https://github.com/wonderfulkasey/DnDGen-frontend
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the 4th Flatiron School Project, done in a Javascript frontend, and a Rails API backend. DNDGen is an equipment tracking site that allows the user to track what they have earned/bought within their own Dungeons' and Dragons' game.
 
-Things you may want to cover:
+# Installation:
+-download the front end of this project
 
-* Ruby version
+-clone the repo
 
-* System dependencies
+-cd into the repo
 
-* Configuration
+-bundle install 
 
-* Database creation
+-rails server
 
-* Database initialization
+# License
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-"# DnDGen-backend" 
+The system is available as open source under the terms of the MIT License.
