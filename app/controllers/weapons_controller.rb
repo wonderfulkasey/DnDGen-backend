@@ -1,4 +1,6 @@
 class WeaponsController < ApplicationController
+#no instance variables used (@variable), keeps it DRYer
+#we use our own class in JS
 
     def index 
         weapons = Weapon.all 
